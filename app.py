@@ -115,7 +115,7 @@ def show_charts(df):
 # Streamlit App
 st.set_page_config(page_title="🎬 Movie Recommendations Dashboard", layout="wide")
 st.title("🎬 Movie Recommendations Dashboard")
-st.markdown("Data from [TMDb](https://www.themoviedb.org/)")
+st.markdown("Data from [TMDb](https://www.themoviedb.org/) - Source Code on [GitHub](https://github.com/tinyKyuu/Movie-Recommendations-Dashboard)")
 
 tab1, tab2 = st.tabs(["⭐ Top Rated", "🔥 Trending Now"])
 
@@ -134,6 +134,9 @@ with tab1:
 
     df_display = filter_movies(top_rated_df, genre_filter, search_term)
 
+    with st.expander("📊 Explore Data"):
+        show_charts(df_display)
+
     # Apply sorting
     if sort_by == "Rating (High → Low)":
         df_display = df_display.sort_values(by="vote_average", ascending=False)
@@ -143,10 +146,6 @@ with tab1:
         df_display = df_display.sort_values(by="release_date", ascending=False)
 
     display_movies_with_posters(df_display, items_per_row=6)
-
-
-    st.markdown("### Explore the Data")
-    show_charts(df_display)
 
 
 
@@ -166,6 +165,9 @@ with tab2:
 
     df_display = filter_movies(trending_df, genre_filter, search_term)
 
+    with st.expander("📊 Explore Data"):
+        show_charts(df_display)
+
     # Apply sorting
     if sort_by == "Rating (High → Low)":
         df_display = df_display.sort_values(by="vote_average", ascending=False)
@@ -174,6 +176,4 @@ with tab2:
     elif sort_by == "Release Date (Newest First)":
         df_display = df_display.sort_values(by="release_date", ascending=False)
 
-    display_movies_with_posters(df_display, items_per_row=6)
-    st.markdown("### Explore the Data")
     show_charts(df_display)
