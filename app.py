@@ -145,7 +145,7 @@ with tab1:
     display_movies_with_posters(df_display, items_per_row=6)
 
 
-    st.markdown("### Explore Data")
+    st.markdown("### Explore the Data")
     show_charts(df_display)
 
 
@@ -175,5 +175,5 @@ with tab2:
         df_display = df_display.sort_values(by="release_date", ascending=False)
 
     display_movies_with_posters(df_display, items_per_row=6)
-    st.markdown("### Explore Data")
+    st.markdown("### Explore the Data")
     show_charts(df_display)
