@@ -134,7 +134,7 @@ with tab1:
 
     df_display = filter_movies(top_rated_df, genre_filter, search_term)
 
-    with st.expander("📊 Explore the Data"):
+    with st.expander("📊 Explore Movie Data"):
         show_charts(df_display)
 
     # Apply sorting
@@ -165,7 +165,7 @@ with tab2:
 
     df_display = filter_movies(trending_df, genre_filter, search_term)
 
-    with st.expander("📊 Explore the Data"):
+    with st.expander("📊 Explore Movie Data"):
         show_charts(df_display)
 
     # Apply sorting
