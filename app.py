@@ -176,4 +176,4 @@ with tab2:
     elif sort_by == "Release Date (Newest First)":
         df_display = df_display.sort_values(by="release_date", ascending=False)
 
-    show_charts(df_display)
+    display_movies_with_posters(df_display, items_per_row=6)
