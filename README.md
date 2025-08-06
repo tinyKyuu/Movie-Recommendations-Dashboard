@@ -1,6 +1,6 @@
 # 🎬 Movie Recommendations Web App
 
-An interactive web app that lets you explore, filter, and analyze popular movies based on genre, rating, release year, and more — powered by data from The Movie Database (TMDb).
+An interactive web app that lets you explore, filter, and analyze popular movies based on genre, rating, release year, and more. The app is powered by data from The Movie Database (TMDb).
 
 ---
 
