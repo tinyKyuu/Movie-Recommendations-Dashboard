@@ -12,7 +12,7 @@ An interactive web app that lets you explore, filter, and analyze popular movies
 
 ## 🌐 Live Demo
 
-🔗 [Try the app here](movies.muharremt.com)
+🔗 [Try the app here](https://movies.muharremt.com/)
 
 > *Note: The app may take a few seconds to load due to free-tier cold start times.*
 
