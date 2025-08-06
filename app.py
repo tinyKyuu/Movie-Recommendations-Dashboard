@@ -43,7 +43,7 @@ def display_movies_with_posters(df, items_per_row=6):
     # CSS styling for the movie cards
     css = """
     <style>
-        .movie-card { text-align: center; padding: 10px; color: white; }
+        .movie-card { text-align: center; padding: 10px; }
         .movie-poster { border-radius: 14px; transition: transform 0.2s; width: 100%; height: auto; cursor: pointer; }
         .movie-poster:hover { transform: scale(1.07); }
         .movie-title { font-weight: bold; margin-top: 6px; font-size: 1rem; }
